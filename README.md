@@ -1,5 +1,5 @@
 # E-commerce React App
-
+### ( Em Desenvolvimento )
 Bem-vindo ao repositório do E-commerce React App! Este é um projeto de comércio eletrônico desenvolvido em React, JavaScript e Styled Components.
 
 ## Visão Geral
