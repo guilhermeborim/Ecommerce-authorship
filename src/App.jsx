@@ -1,12 +1,14 @@
 import React from 'react';
-import EStiloGlobal, { Container } from './styles';
+import EstiloGlobal, { Container } from './styles';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div>
-      <EStiloGlobal />
-      <Container>app</Container>
-    </div>
+    <>
+      <EstiloGlobal />
+      <Login />
+      <Container />
+    </>
   );
 }
 
