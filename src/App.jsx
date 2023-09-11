@@ -1,15 +1,8 @@
 import React from 'react';
-import EstiloGlobal, { Container } from './styles';
-import Login from './pages/Login';
+import Rotas from './Rotas';
 
 function App() {
-  return (
-    <>
-      <EstiloGlobal />
-      <Login />
-      <Container />
-    </>
-  );
+  return <Rotas />;
 }
 
 export default App;

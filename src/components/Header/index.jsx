@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Headercontainer, { NavHeader } from './styles';
 
 function Header() {
@@ -9,7 +10,9 @@ function Header() {
         <ul>
           <li>Home</li>
           <li>Contato</li>
-          <li>Sobre</li>
+          <li>
+            <Link to="/footer">Footer</Link>
+          </li>
           <li>Sign Up</li>
         </ul>
       </NavHeader>
