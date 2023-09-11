@@ -17,6 +17,7 @@ export const FooterContainer = styled.div`
 
 export const NavFooter = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 60px;
   padding-top: 80px;

@@ -1,43 +1,24 @@
 import styled from 'styled-components';
-import LupaHeader from '../../assets/lupa-header.svg';
+import InputCreate from '../Inputs/styles';
 
-const Headercontainer = styled.header`
-  padding: 38px 135px 16px 135px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #00000030;
-
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-  }
-
-  input {
-    padding: 7px 20px;
-    background-color: #f5f5f5;
-    border: none;
-    outline: none;
-    background-image: url(${LupaHeader});
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 34px;
-    &::placeholder {
-      font-family: 'Poppins', sans-serif;
-      font-size: 12px;
-    }
-  }
+export const InputHeader = styled(InputCreate)`
+  border: none;
+  background-color: transparent;
+  outline: none;
 `;
 
-export default Headercontainer;
-
+export const DivInput = styled.div`
+  background-color: #f5f5f5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+`;
 export const NavHeader = styled.nav`
-  display: flex;
   ul {
     display: flex;
     align-items: center;
-    /* padding-right: 232px; */
 
     li {
       padding-left: 48px;
@@ -48,3 +29,22 @@ export const NavHeader = styled.nav`
     }
   }
 `;
+
+export const DivHeader = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+`;
+
+const Headercontainer = styled.header`
+  padding: 38px 0 16px 0;
+  border-bottom: 1px solid #00000030;
+`;
+
+export default Headercontainer;

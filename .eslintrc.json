@@ -10,6 +10,11 @@
   },
   "rules": {
     "react-hooks/rules-of-hooks": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "comma-dangle": "off",
+    "implicit-arrow-linebreak": "off",
     "react-hooks/exhaustive-deps": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
