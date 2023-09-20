@@ -1,50 +1,51 @@
 import React from 'react';
-import IconSend from '../../assets/icon-send.svg';
-import { FooterComponent, FooterContainer, NavFooter } from './styles';
-import { Container } from '../../styles';
+import SendFooter from '../../assets/icon-send.png';
+import QrCodeFooter from '../../assets/Qrcode.png';
+import GooglePlay from '../../assets/GooglePlay.png';
+import AppStore from '../../assets/AppStore.png';
+import NavFooter, { DivDownload, FooterDiv, FooterInput } from './styles';
 
 function Footer() {
   return (
-    <FooterContainer>
-      <Container>
-        <FooterComponent>
-          <NavFooter>
-            <ul>
-              <h3>Exlusive</h3>
-              <li>Subscribe</li>
-              <li>Ganhe 10% na primeira compra!</li>
-              <li>
-                <div>
-                  <input type="text" placeholder="Coloque seu email" />
-                  <img src={IconSend} alt="" />
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <h3>Support</h3>
-              <li>Rua da rua, Sao Paulo</li>
-              <li>exclusive@gmail.com</li>
-              <li>9999-9999</li>
-            </ul>
-            <ul>
-              <h3>Account</h3>
-              <li>Minha conta</li>
-              <li>Login / Register</li>
-              <li>Carrinho</li>
-              <li>Favoritos</li>
-            </ul>
-            <ul>
-              <h3>Links Rapidos</h3>
-              <li>Politica de Privacidade</li>
-              <li>Termos</li>
-              <li>FAQ</li>
-              <li>Contato</li>
-            </ul>
-          </NavFooter>
-          <p>Todos os direitos reservados a Guilherme Borim</p>
-        </FooterComponent>
-      </Container>
-    </FooterContainer>
+    <FooterDiv>
+      <NavFooter className="container">
+        <ul className="ulEmail">
+          <h3>Exclusive</h3>
+          <h4>Subscribe</h4>
+          <li>Get 10% off your first order</li>
+          <FooterInput>
+            <input type="email" placeholder="Enter your email" />
+            <img src={SendFooter} alt="" />
+          </FooterInput>
+        </ul>
+        <ul>
+          <h3>Account</h3>
+          <li>My Account</li>
+          <li>Login / Register</li>
+          <li>Cart</li>
+          <li>Wishlist</li>
+          <li>Shop</li>
+        </ul>
+        <ul>
+          <h3>Pages</h3>
+          <li>Cart</li>
+          <li>Wishlist</li>
+          <li>Shop</li>
+        </ul>
+        <ul className="ulDownload">
+          <h3>Download App</h3>
+          <span>Save $3 with App New User Only</span>
+          <DivDownload>
+            <img src={QrCodeFooter} alt="" />
+            <div>
+              <img src={GooglePlay} alt="" />
+              <img src={AppStore} alt="" />
+            </div>
+          </DivDownload>
+        </ul>
+      </NavFooter>
+      <p>Todos os Direitos Reservados a Guilherme Borim</p>
+    </FooterDiv>
   );
 }
 

@@ -1,30 +1,33 @@
-import { createGlobalStyle, styled } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-const EstiloGlobal = createGlobalStyle`
+const GlobalCss = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-  }
-  ul,li,a {
     list-style: none;
     text-decoration: none;
-  }
-  h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
+    //font-family: 'Poppins', sans-serif;
   }
   img {
     display: block;
     max-width: 100%;
   }
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
 `;
 
-export default EstiloGlobal;
+export default GlobalCss;
 
-export const Container = styled.div`
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
-`;
+export const cores = {
+  black: '#000',
+  white: '#fff',
+  text: '#fafafa',
+  button2: '#db4444'
+};

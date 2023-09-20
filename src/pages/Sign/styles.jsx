@@ -1,57 +1,43 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import DivButton from '../Login/styles';
+import Google from '../../assets/icon-Google.svg';
 
-const SectionCreate = styled.section`
-  display: flex;
-  align-items: center;
-  padding: 60px 0 140px 0;
-`;
-
-export default SectionCreate;
-
-export const DivCreateForm = styled.div`
-  width: 371px;
-  height: 530px;
-  margin-left: 360px;
-  h3 {
-    font-size: 36px;
-    font-weight: 500;
-    padding-bottom: 24px;
-  }
-  p {
-    font-size: 16px;
-    font-weight: 400;
-    padding-bottom: 48px;
-  }
-
-  div {
-    margin-bottom: 40px;
-  }
-
+const ButtonSign = styled(DivButton)`
+  display: block;
   button {
-    margin-bottom: 16px;
-    font-size: 16px;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      padding-right: 16px;
+    width: 100%;
+    &.botaoGoogle {
+      background-color: transparent;
+      border: 1px solid #999;
+      color: #000;
+      margin-top: 16px;
+      background-image: url(${Google});
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-x: 40px;
     }
   }
-  h4 {
-    padding-top: 16px;
-    color: #000;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
 
-    span {
-      padding-left: 16px;
-      a {
-        color: #4d4d4d;
-        text-decoration: underline;
-      }
-    }
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    padding: 34px 0 0 0;
+    text-align: center;
   }
 `;
+
+export const TextLogin = styled(Link)`
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.7;
+  margin-left: 16px;
+`;
+
+export default ButtonSign;

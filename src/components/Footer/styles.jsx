@@ -1,39 +1,70 @@
 import styled from 'styled-components';
+import { DivInput } from '../Header/styles';
+import { cores } from '../../styles';
 
-export const FooterComponent = styled.footer`
-  color: #fff;
-
-  p {
-    text-align: center;
-    color: #3d3d3d;
-    padding-bottom: 24px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  }
-`;
-export const FooterContainer = styled.div`
-  background-color: #030406;
-`;
-
-export const NavFooter = styled.nav`
+const NavFooter = styled.nav`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 60px;
-  padding-top: 80px;
-
-  h3 {
-    padding-bottom: 24px;
+  color: white;
+  padding: 40px 0;
+  .ulEmail {
+    h4 {
+      padding-bottom: 24px;
+      font-size: 20px;
+    }
   }
-  li {
-    padding-bottom: 16px;
-  }
-
-  input {
-    background-color: #030406;
-    border: 1px solid #fff;
-    padding: 10px;
-    &::placeholder {
+  .ulDownload {
+    span {
+      font-size: 12px;
+      font-family: 'Poppins', sans-serif;
+      opacity: 0.7;
+      color: ${cores.text};
     }
   }
 `;
+
+export const FooterDiv = styled.footer`
+  background-color: black;
+  h3 {
+    padding-bottom: 24px;
+    font-size: 24px;
+  }
+  li {
+    padding-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  p {
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+    padding-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+`;
+export const DivDownload = styled.div`
+  padding-top: 8px;
+  display: flex;
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+`;
+export const FooterInput = styled(DivInput)`
+  background-color: black;
+  border: 2px solid #fafafa;
+  padding: 12px 15px 12px 16px;
+
+  input {
+    width: 130px;
+    color: white;
+  }
+  img {
+    cursor: pointer;
+  }
+`;
+
+export default NavFooter;

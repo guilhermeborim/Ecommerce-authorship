@@ -1,50 +1,56 @@
 import styled from 'styled-components';
-import InputCreate from '../Inputs/styles';
+import { cores } from '../../styles';
 
-export const InputHeader = styled(InputCreate)`
-  border: none;
-  background-color: transparent;
-  outline: none;
-`;
-
-export const DivInput = styled.div`
-  background-color: #f5f5f5;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 4px;
-`;
 export const NavHeader = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 16px;
   ul {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
 
     li {
       padding-left: 48px;
-      font-size: 16px;
-      color: #000;
       font-family: 'Poppins', sans-serif;
-      font-weight: lighter;
+    }
+
+    .linot {
+      padding-left: 0;
     }
   }
 `;
 
-export const DivHeader = styled.div`
+export const DivInput = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 7px 12px 7px 20px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-right: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+  img {
+    cursor: pointer;
+  }
+`;
+export const ContainerNav = styled.div`
+  border-bottom: 1px solid #00000039;
+`;
+
+const PromotionHeader = styled.div`
+  background-color: ${cores.black};
+  color: ${cores.text};
+  text-align: center;
+  padding: 12px 0;
+  p {
+    font-family: 'Poppins', sans-serif;
   }
 `;
 
-const Headercontainer = styled.header`
-  padding: 38px 0 16px 0;
-  border-bottom: 1px solid #00000030;
-`;
-
-export default Headercontainer;
+export default PromotionHeader;

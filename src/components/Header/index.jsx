@@ -1,35 +1,33 @@
 import React from 'react';
-
-import Headercontainer, {
-  DivHeader,
-  DivInput,
-  InputHeader,
-  NavHeader
-} from './styles';
-import { Container } from '../../styles';
+import PromotionHeader, { ContainerNav, DivInput, NavHeader } from './styles';
 import LupaHeader from '../../assets/lupa-header.svg';
 
 function Header() {
   return (
-    <Headercontainer>
-      <Container>
-        <DivHeader>
+    <header>
+      <PromotionHeader>
+        <div className="container">
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+        </div>
+      </PromotionHeader>
+      <ContainerNav>
+        <NavHeader className="container">
           <h1>Exclusive</h1>
-          <NavHeader>
-            <ul>
-              <li>Home</li>
-              <li>Contato</li>
-              <li>Sobre</li>
-              <li>Sign Up</li>
-            </ul>
-          </NavHeader>
+          <ul>
+            <li className="linot">Home</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Sign Up</li>
+          </ul>
           <DivInput>
-            <InputHeader type="text" placeholder="O que esta procurando?" />
-            <img src={LupaHeader} alt="Imagem Lupa" />
+            <input type="text" placeholder="What are you looking for?" />
+            <img src={LupaHeader} alt="" />
           </DivInput>
-        </DivHeader>
-      </Container>
-    </Headercontainer>
+        </NavHeader>
+      </ContainerNav>
+    </header>
   );
 }
 

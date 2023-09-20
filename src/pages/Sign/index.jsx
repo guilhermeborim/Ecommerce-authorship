@@ -1,40 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Inputs from '../../components/Inputs';
-import Buttons from '../../components/Buttons';
-import ImgLogin from '../../assets/Side image.png';
-import SectionCreate, { DivCreateForm } from './styles';
-import IconGoogle from '../../assets/Icon-Google.svg';
+import ImgLogin from '../../assets/Side-Image.png';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import {
+  ContainerLogin,
+  DivForm,
+  FormLogin,
+  ImgContainer
+} from '../Login/styles';
+import ButtonSign, { TextLogin } from './styles';
 
 function Sign() {
   return (
-    <SectionCreate>
-      <img src={ImgLogin} alt="" />
-      <DivCreateForm>
-        <h3>Crie sua Conta</h3>
-        <p>Insira seus dados abaixo</p>
-        <div>
-          <Inputs type="text" placeholder="Name" />
-        </div>
-        <div>
-          <Inputs type="email" placeholder="Email" />
-        </div>
-        <div>
-          <Inputs type="password" placeholder="Password" />
-        </div>
-        <Buttons color="#FAFAFA">Crie sua Conta</Buttons>
-        <Buttons backgroundcolor="#fff" color="#000" border="1px solid #999999">
-          <img src={IconGoogle} alt="" />
-          Crie com o Google
-        </Buttons>
-        <h4>
-          Ja tem uma conta?
-          <span>
-            <Link to="/login">Log In</Link>
-          </span>
-        </h4>
-      </DivCreateForm>
-    </SectionCreate>
+    <ContainerLogin>
+      <ImgContainer>
+        <img src={ImgLogin} alt="Imagem de um carrinho de compras" />
+      </ImgContainer>
+      <DivForm>
+        <h2>Create an account</h2>
+        <p>Enter your details below</p>
+        <FormLogin>
+          <Input placeholder="Name" type="text" />
+          <Input placeholder="Email" type="email" />
+          <Input placeholder="Password" type="password" />
+          <ButtonSign>
+            <Button text="Create Account" />
+            <Button text="Sign up with Google" className="botaoGoogle" />
+            <p>
+              Already have account?
+              <span>
+                <TextLogin to="/login">Log In</TextLogin>
+              </span>
+            </p>
+          </ButtonSign>
+        </FormLogin>
+      </DivForm>
+    </ContainerLogin>
   );
 }
 
