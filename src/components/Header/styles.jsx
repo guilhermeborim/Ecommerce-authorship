@@ -32,7 +32,6 @@ export const NavHeader = styled.nav`
 export const DivInput = styled.div`
   display: flex;
   align-items: center;
-
   input {
     background-color: #f5f5f5;
     border: none;

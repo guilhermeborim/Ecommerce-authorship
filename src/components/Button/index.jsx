@@ -3,7 +3,7 @@ import ButtonContainer from './styles';
 
 function Button({ text, className }) {
   return (
-    <ButtonContainer className={className} type="button">
+    <ButtonContainer className={className} type="submit">
       {text}
     </ButtonContainer>
   );

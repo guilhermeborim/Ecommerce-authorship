@@ -56,11 +56,14 @@ export const DivDownload = styled.div`
 export const FooterInput = styled(DivInput)`
   background-color: black;
   border: 2px solid #fafafa;
-  padding: 12px 15px 12px 16px;
-
+  border-radius: 4px;
+  height: 48px;
+  justify-content: space-evenly;
   input {
+    padding: 0;
     width: 130px;
     color: white;
+    background-color: transparent;
   }
   img {
     cursor: pointer;

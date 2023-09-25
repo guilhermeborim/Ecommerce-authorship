@@ -10,7 +10,23 @@ export const DivItem = styled.div`
     display: none;
   }
 `;
-
+export const FlashSales = styled.div`
+  display: flex;
+  align-items: center;
+  section {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    h2 {
+      font-size: 36px;
+      padding-right: 87px;
+    }
+    span {
+      padding-right: 17px;
+      font-size: 32px;
+    }
+  }
+`;
 export const ContainerItem = styled.div`
   background-color: white;
   margin: 10px;

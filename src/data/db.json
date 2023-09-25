@@ -51,7 +51,7 @@
     {
       "id": 9,
       "name": "Playstation 5",
-      "price": 3719.00,
+      "price": 3719,
       "image": "https://images.kabum.com.br/produtos/fotos/238670/console-sony-playstation-5-edicao-digital_1634132113_gg.jpg"
     },
     {
@@ -59,6 +59,14 @@
       "name": "Fonte MSI Bronze",
       "price": 329.99,
       "image": "https://images.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_gg.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Guilherme",
+      "email": "borimdev@gmail.com",
+      "password": "guiborim123"
     }
   ]
 }
