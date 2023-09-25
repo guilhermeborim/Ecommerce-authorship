@@ -12,7 +12,7 @@ import ButtonSign, { TextLogin } from './styles';
 
 function Sign() {
   return (
-    <ContainerLogin>
+    <ContainerLogin className="container">
       <ImgContainer>
         <img src={ImgLogin} alt="Imagem de um carrinho de compras" />
       </ImgContainer>

@@ -1,6 +1,13 @@
 import React from 'react';
-import PromotionHeader, { ContainerNav, DivInput, NavHeader } from './styles';
-import LupaHeader from '../../assets/lupa-header.svg';
+import PromotionHeader, {
+  ContainerNav,
+  DivInput,
+  LinkNavbar,
+  NavHeader
+} from './styles';
+
+import Wishlist from '../../assets/Wishlist.svg';
+import IconCart from '../../assets/icon-cart.png';
 
 function Header() {
   return (
@@ -16,14 +23,20 @@ function Header() {
         <NavHeader className="container">
           <h1>Exclusive</h1>
           <ul>
-            <li className="linot">Home</li>
+            <LinkNavbar to="/homepage" className="linot">
+              Home
+            </LinkNavbar>
             <li>Contato</li>
             <li>Sobre</li>
-            <li>Sign Up</li>
+            <LinkNavbar to="/">Sign Up</LinkNavbar>
           </ul>
           <DivInput>
             <input type="text" placeholder="What are you looking for?" />
-            <img src={LupaHeader} alt="" />
+            {/* <img src={LupaHeader} alt="" /> */}
+            <div>
+              <img src={Wishlist} alt="" />
+              <img src={IconCart} alt="" />
+            </div>
           </DivInput>
         </NavHeader>
       </ContainerNav>
