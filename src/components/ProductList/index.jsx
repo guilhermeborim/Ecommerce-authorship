@@ -1,21 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import ContainerProduct, {
   ButtonContainer,
-  ContainerItem,
   DivItem,
   FlashSales
 } from './styles';
 import ArrowRight from '../../assets/arrow-right.svg';
 import Product from '../Product';
+import useFetch from '../../hooks/useFetch';
 
+const url = 'http://localhost:3000/products';
 function ProductList() {
-  const [data, setData] = useState([]);
   const carousel = useRef(null);
-  useEffect(() => {
-    fetch('http://localhost:3000/products')
-      .then((response) => response.json())
-      .then(setData);
-  }, []);
+
+  const { data: items } = useFetch(url);
 
   const handleLeftClick = (e) => {
     e.preventDefault();
@@ -27,7 +24,7 @@ function ProductList() {
 
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
-  if (!data || !data.length) return null;
+  if (!items || !items.length) return null;
 
   return (
     <ContainerProduct className="container">
@@ -45,22 +42,12 @@ function ProductList() {
         </ButtonContainer>
       </FlashSales>
       <DivItem ref={carousel}>
-        {data.map((item) => {
-          const { id, name, price, image } = item;
-          return (
-            <ContainerItem key={id}>
-              <div>
-                <img src={image} alt="" />
-              </div>
-              <div>
-                <span>{name}</span>
-                <span>{price}</span>
-              </div>
-            </ContainerItem>
-          );
-        })}
+        {items &&
+          items.map((item) => {
+            const { id, name, price, image } = item;
+            return <Product id={id} name={name} price={price} image={image} />;
+          })}
       </DivItem>
-      <Product />
     </ContainerProduct>
   );
 }

@@ -3,12 +3,17 @@ import styled from 'styled-components';
 const ProductContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
-  section {
-  }
+  width: 270px;
+  border-radius: 16px;
+  flex: none;
+`;
+
+export const ImgProduct = styled.div`
+  display: flex;
+  align-items: center;
 
   img {
-    max-width: 150px;
-    border: 1px solid #f5f5f5;
+    max-width: 190px;
     border-radius: 5px;
   }
 `;
