@@ -44,10 +44,21 @@ function ProductList() {
       <DivItem ref={carousel}>
         {items &&
           items.map((item) => {
-            const { id, name, price, image } = item;
-            return <Product id={id} name={name} price={price} image={image} />;
+            const { id, name, price, image, discount } = item;
+            return (
+              <Product
+                key={id}
+                name={name}
+                price={price}
+                image={image}
+                discount={discount}
+              />
+            );
           })}
       </DivItem>
+      <button type="button" className="categories">
+        View All Products
+      </button>
     </ContainerProduct>
   );
 }

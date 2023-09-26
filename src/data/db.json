@@ -4,60 +4,70 @@
       "id": 1,
       "name": "Placa de Vídeo RTX 3060 TI",
       "price": 2099.99,
+      "discount": "$2300.00",
       "image": "https://images.kabum.com.br/produtos/fotos/477363/placa-de-video-rtx-3060-ti-ventus-3x-8gd6x-oc-msi-nvidia-geforce-8gb-gddr6x-dlss-ray-tracing-g-sync-_1692282310_gg.jpg"
     },
     {
       "id": 2,
       "name": "Monitor UltraGear 27",
       "price": 1099.99,
+      "discount": "$1200.00",
       "image": "https://images.kabum.com.br/produtos/fotos/444038/monitor-gamer-lg-ultragear-27-full-hd-144hz-1ms-ips-hdmi-e-displayport-hdr-10-99-srgb-freesync-premium-vesa-27gn65r_1684763831_gg.jpg"
     },
     {
       "id": 3,
       "name": "Headset Gamer Redragon",
       "price": 279.99,
+      "discount": "$300.00",
       "image": "https://images.kabum.com.br/produtos/fotos/227818/headset-gamer-redragon-zeus-chroma-mk-ii-rgb-surround-7-1-usb-drivers-53mm-preto-vermelho-h510-rgb_1631555309_gg.jpg"
     },
     {
       "id": 4,
       "name": "Macbook Pro Apple 16",
       "price": 11.999,
+      "discount": "$15000.00",
       "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/479191/Macbook-Pro-Apple-16-Chip-M1-Pro-16GB-SSD-512GB-Cinza-Espacial-Mk183bz-A_1691761114_gg.jpg"
     },
     {
       "id": 5,
       "name": "Headset Sem Fio HyperX",
       "price": 379.99,
+      "discount": "$450.00",
       "image": "https://images.kabum.com.br/produtos/fotos/114027/headset-sem-fio-gamer-hyperx-cloud-stinger-core-7-1-hhss1c-ba-bk-g_1597936019_gg.jpg"
     },
     {
       "id": 6,
       "name": "Processador Intel Core i5",
       "price": 959.99,
+      "discount": "$1100.00",
       "image": "https://images.kabum.com.br/produtos/fotos/283718/processador-intel-core-i5-12400f-cache-xmb-xghz-xghz-max-turbo-lga-1700-bx8071512400f_1640094446_gg.jpg"
     },
     {
       "id": 7,
       "name": "Air Cooler Rise Mode",
       "price": 88.99,
+      "discount": "$100.00",
       "image": "https://images.kabum.com.br/produtos/fotos/130040/air-cooler-rise-mode-gamer-g800-180mm-rgb-rm-ac-o8-rgb_1663775981_gg.jpg"
     },
     {
       "id": 8,
       "name": "Teclado Mecânico HyperX",
       "price": 219.99,
+      "discount": "$300.00",
       "image": "https://images.kabum.com.br/produtos/fotos/371586/teclado-mecanico-gamer-hyperx-alloy-mkw100-rgb-switch-red-full-size-layout-us-4p5e1aa-aba_1660832224_gg.jpg"
     },
     {
       "id": 9,
       "name": "Playstation 5",
-      "price": 3719,
+      "price": 3719.99,
+      "discount": "$4000.00",
       "image": "https://images.kabum.com.br/produtos/fotos/238670/console-sony-playstation-5-edicao-digital_1634132113_gg.jpg"
     },
     {
       "id": 10,
       "name": "Fonte MSI Bronze",
       "price": 329.99,
+      "discount": "$400.00",
       "image": "https://images.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_gg.jpg"
     }
   ],

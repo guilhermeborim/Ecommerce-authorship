@@ -1,11 +1,28 @@
 import styled from 'styled-components';
 
-const ContainerProduct = styled.div``;
+const ContainerProduct = styled.div`
+  border-bottom: 1px solid #0000004b;
+  .categories {
+    background-color: #db4444;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 16px 48px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+`;
 
 export const DivItem = styled.div`
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding-top: 40px;
+  padding-bottom: 60px;
   &::-webkit-scrollbar {
     display: none;
   }
